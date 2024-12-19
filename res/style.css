@@ -1,0 +1,66 @@
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    width: 300px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+/* Стили для навигационной панели */
+nav {
+    background-color: #333; /* Тёмный фон для навбара */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Горизонтальная навигация */
+}
+
+nav ul li {
+    margin-right: 20px; /* Отступы между пунктами меню */
+}
+
+nav ul li a {
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-size: 16px;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Цвет при наведении */
+    border-radius: 4px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Вертикальная навигация на мобильных устройствах */
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Отступы между пунктами в мобильной версии */
+    }
+}
